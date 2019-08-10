@@ -1,0 +1,42 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>
+			Banner 1
+		</title>
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<div class="nav">
+				<ul>
+					<li><a href="">ABOUT</a></li>
+					<li><a href="">PROJECT</a></li>
+					<li><a href="">CONTACT</a></li>
+					<li><a href="">CAREER</a></li>
+				</ul>
+			</div>
+			<div class="tagline">
+				<p>THIS IS JUST THE BEGINNING.</p>
+				<h5>The best is yet to come.</h5>
+			</div>
+			<div class="logo">
+				ORIGINdigi
+			</div>
+			<div class="links">
+				<ul>
+					<li><a href="">MARKETPLACE</a></li>
+					<li><a href="">BUSINESS</a></li>
+					<li><a href="">SOCIAL</a></li>
+				</ul>
+			</div>
+		</div>
+		<script>
+			document.querySelector('.nav ul li a').addEventListener('click',function(){
+					console.log('hello');
+					document.querySelector('.nav ul li a').classList.add('nav_active');
+			});
+		</script>
+	</body>
+</html>
