@@ -6,16 +6,22 @@
 		</title>
 		<link rel="stylesheet" href="style.css">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/878bb393af.js"></script>
 	</head>
 	<body>
 		<div class="container">
 			<div class="nav">
-				<ul>
-					<li><a href="">ABOUT</a></li>
-					<li><a href="">PROJECT</a></li>
-					<li><a href="">CONTACT</a></li>
-					<li><a href="">CAREER</a></li>
-				</ul>
+				<div class="hamburger">
+					<i class="fas fa-bars fa-lg"></i>
+				</div>
+				<div class="nav_list">
+					<ul>
+						<li><a href="">ABOUT</a></li>
+						<li><a href="">PROJECT</a></li>
+						<li><a href="">CONTACT</a></li>
+						<li><a href="">CAREER</a></li>
+					</ul>
+				</div>
 			</div>
 			<div class="tagline">
 				<p>THIS IS JUST THE BEGINNING.</p>
@@ -33,10 +39,43 @@
 			</div>
 		</div>
 		<script>
-			document.querySelector('.nav ul li a').addEventListener('click',function(){
-					console.log('hello');
-					document.querySelector('.nav ul li a').classList.add('nav_active');
+			//toggle navlist
+			document.querySelector('.hamburger').addEventListener('click',function(){
+					document.querySelector('.nav_list').classList.toggle('nav_active');
 			});
+
+			//text transition
+			var speed =100;
+			var p = document.querySelector('p');
+			var h5 = document.querySelector('h5');
+			var delay = p.innerHTML.length*speed + speed;
+
+			//type effect to p
+			typeEffect(p, speed);
+
+			//type effect to h5
+			setTimeout(function(){
+				h5.style.display = "block";
+				typeEffect(h5, speed);
+			},delay);
+
+			//type effect function
+			function typeEffect(element, speed){
+				var text = element.innerHTML;
+				element.innerHTML = "";
+
+				var i = 0;
+				var timer = setInterval(function(){
+						if(i < text.length){
+							element.append(text.charAt(i));
+							i++;
+						}
+						else{
+							clearInterval(timer);
+						}
+					
+					},speed);	
+			}
 		</script>
 	</body>
 </html>
