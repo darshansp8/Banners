@@ -27,6 +27,9 @@
 				<p>THIS IS JUST THE BEGINNING.</p>
 				<h5>The best is yet to come.</h5>
 			</div>
+			<div class="button">
+				<button>EXPLORE</button>
+			</div>
 			<div class="logo">
 				ORIGINdigi
 			</div>
@@ -49,7 +52,7 @@
 			var p = document.querySelector('p');
 			var h5 = document.querySelector('h5');
 			var delay = p.innerHTML.length*speed + speed;
-
+			var delay1 = p.innerHTML.length*speed + h5.innerHTML.length*speed + speed;
 			//type effect to p
 			typeEffect(p, speed);
 
@@ -76,6 +79,12 @@
 					
 					},speed);	
 			}
+
+			//button delay
+			setTimeout(function(){
+				document.querySelector('.button').style.display = 'block';
+
+			},delay1); 
 		</script>
 	</body>
 </html>
