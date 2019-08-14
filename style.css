@@ -71,6 +71,26 @@
 	display: none;
 }
 
+.button{
+	position: absolute;
+	top: 520;
+	left: 170;
+	display: none;
+}
+
+.button button{
+	padding: 10px 20px;
+	background-color: transparent;
+	border: 1px solid black;
+	font-size: small;
+	transition: .3s;
+}
+
+.button button:hover{
+	background-color: black;
+	color: #fffa01;
+}
+
 .logo{
 	position: absolute;
 	top: 720;
