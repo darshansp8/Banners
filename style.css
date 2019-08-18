@@ -24,12 +24,12 @@
 .nav .hamburger{
 	margin-bottom: 10px;
 	transition: .3s;
-
+	cursor: pointer; 
 }
 .nav_list{
 	display: block;
 	position: relative;
-	top: -100;
+	/*top: -100;*/
 	display: none;
 }
 
@@ -84,6 +84,7 @@
 	border: 1px solid black;
 	font-size: small;
 	transition: .3s;
+	cursor: pointer;
 }
 
 .button button:hover{
