@@ -1,0 +1,34 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+	width: 100%;
+
+	/*background-image: url('images/trekking1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;*/
+}
+
+.nav{
+	width: 100%;
+	height: 70px;
+	background-color: yellow;
+}
+.left,.right{
+	width: 49.7%;
+	display: inline-block;
+	vertical-align: top;
+	height: 600px;
+	/*margin-top: 100px;*/
+}
+
+.left{
+	background-color: red;
+}
+.right{
+	background-color: green;
+}
