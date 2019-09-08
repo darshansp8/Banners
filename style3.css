@@ -1,0 +1,74 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container{
+	width: 100%;
+	/*padding: 20px;*/
+	height: 800px;
+	/*background-color: red;*/
+	background-image: url('images/trekking2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+.navbar{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	/*background-color: red;*/
+	height: 9.5vh;
+}
+.logo{
+	position: absolute;
+	/*transform: translate(5vw,0vh);*/
+	/*background-color: green;*/
+	padding: 2vh 5vw;
+	/*width: 20%;*/
+	font-family: 'Playfair Display', serif;
+	font-size: xx-large;
+	font-weight: bolder;
+}
+
+.navlist{
+	position: absolute;
+	transform: translate(30vw,0vh);
+	/*background-color: yellow;*/
+	border-bottom: 2px solid black;
+
+}
+
+.navlist ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 2vh 2vw;
+	font-size: large;
+	line-height: 5.5vh;
+}
+
+.navlist ul li a{
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+}
+
+.register{
+	position: absolute;
+	transform: translate(85vw, 2vh);
+	/*background-color: red;*/
+}
+
+.register button{
+	/*display: inline-block;*/
+	text-transform: uppercase;
+	line-height: 3vh;
+	padding: 2vh 2vw;
+	font-size: large;
+	background-color: rgba(255,255,255,0.4);
+	border-radius: 50px;
+	border: 2px solid black;
+	box-shadow: 2px 3px 5px solid black;
+}
